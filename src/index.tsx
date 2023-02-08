@@ -17,6 +17,6 @@ const RnDeviceIntegrity = NativeModules.RnDeviceIntegrity
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnDeviceIntegrity.multiply(a, b);
-}
+export const getDeviceToken = async () => {
+  return RnDeviceIntegrity.getDeviceToken();
+};
